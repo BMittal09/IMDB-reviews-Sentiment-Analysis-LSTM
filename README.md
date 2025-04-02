@@ -3,7 +3,7 @@
 This project implements sentiment analysis on the IMDB movie reviews dataset using a Long Short-Term Memory (LSTM) network. The goal is to classify reviews as either positive or negative based on their textual content. LSTMs are particularly effective for this task because they capture long-range dependencies in text, making them well-suited for natural language processing (NLP) applications.
 
 ## Features
-Preprocessing & Tokenization
+-Preprocessing & Tokenization
 
 Convert text reviews into sequences of numerical tokens.
 
@@ -11,7 +11,7 @@ Apply padding and truncation for uniform input size.
 
 Use word embeddings (such as pre-trained GloVe or trainable embeddings).
 
-LSTM-Based Sentiment Classification
+-LSTM-Based Sentiment Classification
 
 Employ a deep learning model with LSTM layers.
 
@@ -19,7 +19,7 @@ Incorporate dropout and batch normalization to prevent overfitting.
 
 Utilize binary cross-entropy loss for training.
 
-Training & Evaluation
+-Training & Evaluation
 
 Train on the IMDB dataset using TensorFlow/Keras.
 
@@ -27,7 +27,7 @@ Track accuracy and loss across epochs.
 
 Evaluate performance using precision, recall, F1-score, and confusion matrix.
 
-Visualization & Insights
+-Visualization & Insights
 
 Plot training loss and accuracy curves.
 
