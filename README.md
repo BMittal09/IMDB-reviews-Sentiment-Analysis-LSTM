@@ -1,21 +1,50 @@
 # IMDB-reviews-Sentiment-Analysis-LSTM
 ## Overview
-This project performs sentiment analysis on IMDB movie reviews using a Long Short-Term Memory (LSTM) network. The model classifies reviews as positive or negative, leveraging the sequential nature of text data for improved accuracy.
+This project implements sentiment analysis on the IMDB movie reviews dataset using a Long Short-Term Memory (LSTM) network. The goal is to classify reviews as either positive or negative based on their textual content. LSTMs are particularly effective for this task because they capture long-range dependencies in text, making them well-suited for natural language processing (NLP) applications.
 
 ## Features
-Preprocessing of IMDB dataset (tokenization, padding, and embedding).
+Preprocessing & Tokenization
 
-LSTM-based deep learning model for sentiment classification.
+Convert text reviews into sequences of numerical tokens.
 
-Training and evaluation of the model with performance metrics.
+Apply padding and truncation for uniform input size.
 
-Visualization of accuracy and loss curves.
+Use word embeddings (such as pre-trained GloVe or trainable embeddings).
+
+LSTM-Based Sentiment Classification
+
+Employ a deep learning model with LSTM layers.
+
+Incorporate dropout and batch normalization to prevent overfitting.
+
+Utilize binary cross-entropy loss for training.
+
+Training & Evaluation
+
+Train on the IMDB dataset using TensorFlow/Keras.
+
+Track accuracy and loss across epochs.
+
+Evaluate performance using precision, recall, F1-score, and confusion matrix.
+
+Visualization & Insights
+
+Plot training loss and accuracy curves.
+
+Display word frequency distributions.
+
+Generate sample predictions on test reviews.
+
+## Dataset
+The dataset used is the IMDB Large Movie Review Dataset, which contains 50,000 reviews (25,000 for training and 25,000 for testing). Each review is labeled as positive (1) or negative (0).
 
 ## Tech Stack
-Python
+Programming Language: Python
 
-TensorFlow / Keras
+Deep Learning Framework: TensorFlow/Keras
 
-NumPy & Pandas
+Data Handling: NumPy, Pandas
 
-Matplotlib & Seaborn
+Visualization: Matplotlib, Seaborn
+
+Text Preprocessing: NLTK, Tokenizer
